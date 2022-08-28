@@ -27,7 +27,7 @@ if (game != null && dice != null)
     {
         Console.WriteLine("");
         Console.WriteLine($"Press a key to roll the dice for the player {game.GetPlayerTurn()}");
-        Console.ReadLine();
+        Console.ReadKey(true);
         Console.WriteLine($"Dice result = {game.PlayTurn()}");
         Console.WriteLine($"Player {game.GetPlayerTurn()} is in {game.GetCurrentPlayerPosition()}");
         game.ChangeTurn();
